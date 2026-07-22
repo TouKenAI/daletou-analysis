@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 重庆投肯智能科技有限公司 / 陈刚
+Copyright (c) 2026 陈刚 / 重庆投肯智能科技有限公司 (Chongqing Touken Intelligent Technology Co., Ltd.)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,12 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+重要声明 / Important Notice:
+本仓库为「大乐透数据分析流程」的开源演示，所有号码与统计均为历史数据归档，
+不预示未来开奖结果，不构成任何购彩建议。彩票为独立随机事件，请理性投注。
+This repository is an open-source demonstration of a lottery data-analysis workflow.
+All numbers and statistics are historical archives; they do not predict future
+draws and constitute no betting advice. Lotteries are independent random events—play responsibly.
