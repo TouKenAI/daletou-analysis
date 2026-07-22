@@ -1,0 +1,27 @@
+name: CI 可运行验证
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: 语法检查
+        run: python -m py_compile scripts/*.py
+      - name: 实跑标准5步流程
+        run: |
+          python scripts/analyze.py
+          python scripts/zone_check.py
+          python scripts/back_rule.py
+          python scripts/select_ref.py
+          python scripts/final_numbers.py
+          python scripts/dlt_maxcover.py
+          python scripts/dlt_review.py
+      - name: 校验产出
+        run: test -f data/dlt_final_groups.csv && echo "OK outputs present"
