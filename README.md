@@ -39,7 +39,7 @@
 `dlt_maxcover.py` 在 5 步硬约束之上，用**最大覆盖贪心算法**选 5 注，使 5 注在 35+12 号码空间铺得最散。
 
 **数学诚实性**：
-- ✅ **可优化**：5 注越分散 → 「至少命中任一阵容（含末等奖）」联合概率越高（蒙特卡洛 ~31% vs 随机 29%）
+- ✅ **可优化**：5 注越分散 → 「至少命中任一阵容（含末等奖）」联合概率越高（蒙特卡洛：优化≈31.1% / 标准≈30.8% / 随机≈30.3%，优化仅比随机多 +0.74pp）
 - ❌ **不可优化**：一等奖概率恒 **1/21,425,712**（C(35,5)×C(12,2)），任何策略零影响
 
 ## 算法（Algorithms）
@@ -89,15 +89,22 @@ python scripts/dlt_review.py     # 蒙特卡洛复查
 ```
 daletou-analysis/
 ├── SKILL.md                      # 完整技能说明文档
+├── README.md                     # 本文件（GitHub 开源说明）
 ├── LICENSE                       # MIT 开源许可证
-└── scripts/
-    ├── analyze.py                # 步骤1：数据存档+冷热
-    ├── zone_check.py             # 步骤2：前区三区校验
-    ├── back_rule.py              # 步骤3：后区冷热搭配
-    ├── select_ref.py             # 步骤4：选号参考约束
-    ├── final_numbers.py          # 步骤5：成品号码
-    ├── dlt_maxcover.py           # 优化引擎（最大覆盖）
-    └── dlt_review.py             # 优化复查（蒙特卡洛）
+├── REPO_ABOUT.md                 # 仓库 About 描述与发布步骤
+├── publish.sh                    # 一键发布到 GitHub 脚本
+├── scripts/
+│   ├── analyze.py                # 步骤1：数据存档+冷热
+│   ├── zone_check.py             # 步骤2：前区三区校验
+│   ├── back_rule.py              # 步骤3：后区冷热搭配
+│   ├── select_ref.py             # 步骤4：选号参考约束
+│   ├── final_numbers.py          # 步骤5：成品号码
+│   ├── dlt_maxcover.py           # 优化引擎（最大覆盖）
+│   └── dlt_review.py             # 优化复查（蒙特卡洛）
+├── references/
+│   ├── caliber.md                # 口径铁律与分类规则详解
+│   └── data_schema.md            # 数据格式与更新方法
+└── data/                         # 默认数据/产出目录（含示例21期数据）
 ```
 
 ---
