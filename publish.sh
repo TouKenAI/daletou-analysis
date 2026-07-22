@@ -13,12 +13,12 @@
 #   或: bash publish.sh 你的PAT
 #
 # 默认推到 (把下面 REPO_URL 改成你自己的仓库):
-#   https://github.com/cg38121-creator/daletou-analysis.git
+#   https://github.com/TouKenAI/daletou-analysis.git
 # ============================================================
 set -e
 
 # ---- 可配置项 ----
-REPO_URL="${REPO_URL:-https://github.com/cg38121-creator/daletou-analysis.git}"
+REPO_URL="${REPO_URL:-https://github.com/TouKenAI/daletou-analysis.git}"
 COMMIT_MSG="${COMMIT_MSG:-feat: 大乐透标准分析流程 skill v1 (5步法+最大覆盖优化+蒙特卡洛复查)}"
 
 # ---- 读取令牌 ----
