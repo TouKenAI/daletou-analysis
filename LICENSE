@@ -19,12 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-重要声明 / Important Notice:
-本仓库为「大乐透数据分析流程」的开源演示，所有号码与统计均为历史数据归档，
-不预示未来开奖结果，不构成任何购彩建议。彩票为独立随机事件，请理性投注。
-This repository is an open-source demonstration of a lottery data-analysis workflow.
-All numbers and statistics are historical archives; they do not predict future
-draws and constitute no betting advice. Lotteries are independent random events—play responsibly.
