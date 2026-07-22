@@ -19,7 +19,7 @@ Standard Super Lotto (Chinese Sports Lottery) analysis pipeline: 5-step data arc
 # 发布步骤 / How to Publish
 
 ## 前置条件
-1. 一个 GitHub 账号（如 `cg38121-creator`）。
+1. 一个 GitHub 账号（如 `TouKenAI`）。
 2. 生成一个 **Personal Access Token (PAT)**：
    - 路径：GitHub → 右上角头像 → **Settings** → **Developer settings** → **Personal access tokens** → **Tokens (classic)** → **Generate new token**
    - 勾选 **`repo`**（全选该组）权限
