@@ -107,7 +107,8 @@ def is_win(fh, bh):
     return (fh, bh) in WIN_SET
 
 # ---------- 5. 蒙特卡洛验证（均匀随机开奖） ----------
-def simulate(N, grps):
+def simulate(N, grps, seed):
+    random.seed(seed)
     w = 0
     for _ in range(N):
         df = set(random.sample(range(1, 36), 5))
@@ -116,18 +117,20 @@ def simulate(N, grps):
             w += 1
     return w / N
 
-MC_N = 150000
-mine_rate = simulate(MC_N, groups)
+MC_N = 400000
+mine_rate = simulate(MC_N, groups, 100)
 
 std_groups = [
     ([4,13,15,26,27],[2,10]), ([6,12,19,21,23],[1,11]),
     ([7,15,18,26,27],[4,9]),  ([1,12,21,29,30],[5,8]),
     ([4,11,20,22,32],[3,12]),
 ]
-std_rate_v = simulate(MC_N, std_groups)
-rand_rate = simulate(MC_N, [list(zip(*[random.sample(range(1,36),5), random.sample(range(1,13),2)]))
-                            for _ in range(5)] if False else None) if False else simulate(MC_N,
-    [(random.sample(range(1,36),5), random.sample(range(1,13),2)) for _ in range(5)])
+std_rate_v = simulate(MC_N, std_groups, 200)
+# 独立固定种子随机基准(与 dlt_review.py 口径完全一致), 避免从已被模拟消耗的随机流中
+# 抽取基准导致命中率被低估、从而虚增"优化增益"(曾出现的 +2.44pp 虚高即源于此)
+random.seed(SEED + 1)
+rand_groups = [(random.sample(range(1, 36), 5), random.sample(range(1, 13), 2)) for _ in range(5)]
+rand_rate = simulate(MC_N, rand_groups, 300)
 
 hist_hit = sum(1 for fnums,bnums in raw
                if any(is_win(len(set(fc)&set(fnums)), len(set(bc)&set(bnums))) for fc,bc in groups))
@@ -243,8 +246,8 @@ h1{{font-size:23px;margin:0 0 4px;color:#0d9488}}
 <div class="warn">
 <b>⚠️ 诚实边界（必读）：</b><br>
 ① <b>一等奖概率 1/21,425,712 由组合数决定，选号策略零影响</b>——任何模型都无法提高中头奖概率。<br>
-② 本模型提升的是<b>「至少中小奖(含末等奖)」的覆盖率</b>（约 31% vs 随机 29%），对头奖无效。<br>
-③ 标准5步流程组本身已达 30.78%（三区均衡天然分散），本优化仅多 <b>0.5个百分点</b>——日常用标准流程的5组已足够，不必纠结。<br>
+② 本模型提升的是<b>「至少中小奖(含末等奖)」的覆盖率</b>（优化约 {mine_rate*100:.1f}% · 标准约 {std_rate_v*100:.1f}% · 随机约 {rand_rate*100:.1f}%），对头奖无效。<br>
+③ 标准5步流程组本身已达 {std_rate_v*100:.1f}%（三区均衡天然分散），本优化仅多 <b>+{(mine_rate-std_rate_v)*100:.2f}个百分点</b>（相对随机 +{(mine_rate-rand_rate)*100:.2f}pp）——日常用标准流程的5组已足够，不必纠结。<br>
 ④ 大乐透每期开奖为独立随机事件，历史规律不预示未来。以上仅为数据归档与数学模型演示，<b>绝不构成任何购彩建议</b>。
 </div>
 
