@@ -1,0 +1,119 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>大乐透后区冷热搭配说明</title>
+<style>
+ *{box-sizing:border-box;font-family:-apple-system,"Microsoft YaHei",sans-serif}
+ body{margin:0;background:#f5f7fa;color:#222;padding:24px}
+ .wrap{max-width:880px;margin:0 auto}
+ h1{font-size:22px;margin:0 0 4px} .sub{color:#666;font-size:13px;margin-bottom:18px}
+ .card{background:#fff;border-radius:10px;padding:18px 20px;margin-bottom:18px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+ .kv{display:flex;gap:20px;flex-wrap:wrap;font-size:14px;margin:8px 0}
+ .pill{display:inline-block;padding:3px 10px;border-radius:20px;font-size:13px;background:#eaf3fb;color:#2980b9;margin:2px}
+ .hot{color:#e74c3c;font-weight:700} .cold{color:#2980b9;font-weight:700} .warm{color:#7f8c8d}
+ .ok{color:#27ae60} .bad{color:#e74c3c} .mix{color:#8e44ad} .warmc{color:#7f8c8d}
+ table{width:100%;border-collapse:collapse;font-size:13px}
+ th,td{padding:5px 8px;border-bottom:1px solid #eee;text-align:center}
+ th{background:#fafafa;color:#555}
+ .note{font-size:12px;color:#888;line-height:1.7}
+ .rule{background:#f8f9fb;border-left:4px solid #3498db;padding:8px 12px;margin:6px 0;border-radius:4px;font-size:13px}
+</style></head><body><div class="wrap">
+<h1>📊 大乐透后区冷热搭配说明</h1>
+<div class="sub">规则口径: ①后区冷热划分(频次均值±0.5std) ②两码和值锁定9-16 ③禁止全冷/全热组合 ｜ 数据: 第2026059–2026079期 (共21期)</div>
+
+<div class="card">
+  <h3 style="margin-top:0">① 后区冷热号划分</h3>
+  <div class="kv">
+    <span class="pill hot">热号 3个: 02 11 12</span>
+    <span class="pill cold">冷号 3个: 03 06 09</span>
+    <span class="pill">温号 6个: 01 04 05 07 08 10</span>
+  </div>
+  <div class="note">划分依据: 21期后区共42个出号位置, 均值3.50次/号, 标准差1.38。热号=频次≥4.19(即≥5次); 冷号=频次≤2.81(即≤2次); 其余为温号。</div>
+</div>
+
+<div class="card">
+  <h3 style="margin-top:0">② + ③ 组合规则与合法搭配池</h3>
+  <div class="rule">规则A: 两码和值必须 ∈ [9, 16]</div>
+  <div class="rule">规则B: 禁止<b>全冷</b>(两码皆冷) 与<b>全热</b>(两码皆热); 允许 热+温 / 冷+温 / 温+温 / 热+冷 混合</div>
+  <div class="kv">
+    <span>全部组合 C(12,2) = <b>66</b></span>
+    <span class="ok">合法组合 = <b>33</b></span>
+    <span class="bad">被禁组合 = <b>33</b></span>
+  </div>
+  <div>合法组合类型分布: <span class='pill'>冷温: <b>12</b></span> <span class='pill'>温温: <b>10</b></span> <span class='pill'>温热: <b>8</b></span> <span class='pill'>冷热: <b>3</b></span></div>
+  <p class="note">注: "热冷"实为热+冷混合(一热一冷), 满足"非全冷非全热", 故允许; 仅"冷冷""热热"两种被禁。</p>
+</div>
+
+<div class="card">
+  <h3 style="margin-top:0">📋 合法后区两码组合清单 (33组)</h3>
+  <table><thead><tr><th>组合</th><th>和值</th><th>类型</th></tr></thead><tbody><tr><td>01 + 08</td><td>9</td><td class='warm'>温温</td></tr>
+<tr><td>02 + 07</td><td>9</td><td class='bad'>温热</td></tr>
+<tr><td>04 + 05</td><td>9</td><td class='warm'>温温</td></tr>
+<tr><td>01 + 09</td><td>10</td><td class='mix'>冷温</td></tr>
+<tr><td>02 + 08</td><td>10</td><td class='bad'>温热</td></tr>
+<tr><td>03 + 07</td><td>10</td><td class='mix'>冷温</td></tr>
+<tr><td>04 + 06</td><td>10</td><td class='mix'>冷温</td></tr>
+<tr><td>01 + 10</td><td>11</td><td class='warm'>温温</td></tr>
+<tr><td>02 + 09</td><td>11</td><td class='mix'>冷热</td></tr>
+<tr><td>03 + 08</td><td>11</td><td class='mix'>冷温</td></tr>
+<tr><td>04 + 07</td><td>11</td><td class='warm'>温温</td></tr>
+<tr><td>05 + 06</td><td>11</td><td class='mix'>冷温</td></tr>
+<tr><td>01 + 11</td><td>12</td><td class='bad'>温热</td></tr>
+<tr><td>02 + 10</td><td>12</td><td class='bad'>温热</td></tr>
+<tr><td>04 + 08</td><td>12</td><td class='warm'>温温</td></tr>
+<tr><td>05 + 07</td><td>12</td><td class='warm'>温温</td></tr>
+<tr><td>01 + 12</td><td>13</td><td class='bad'>温热</td></tr>
+<tr><td>03 + 10</td><td>13</td><td class='mix'>冷温</td></tr>
+<tr><td>04 + 09</td><td>13</td><td class='mix'>冷温</td></tr>
+<tr><td>05 + 08</td><td>13</td><td class='warm'>温温</td></tr>
+<tr><td>06 + 07</td><td>13</td><td class='mix'>冷温</td></tr>
+<tr><td>03 + 11</td><td>14</td><td class='mix'>冷热</td></tr>
+<tr><td>04 + 10</td><td>14</td><td class='warm'>温温</td></tr>
+<tr><td>05 + 09</td><td>14</td><td class='mix'>冷温</td></tr>
+<tr><td>06 + 08</td><td>14</td><td class='mix'>冷温</td></tr>
+<tr><td>03 + 12</td><td>15</td><td class='mix'>冷热</td></tr>
+<tr><td>04 + 11</td><td>15</td><td class='bad'>温热</td></tr>
+<tr><td>05 + 10</td><td>15</td><td class='warm'>温温</td></tr>
+<tr><td>07 + 08</td><td>15</td><td class='warm'>温温</td></tr>
+<tr><td>04 + 12</td><td>16</td><td class='bad'>温热</td></tr>
+<tr><td>05 + 11</td><td>16</td><td class='bad'>温热</td></tr>
+<tr><td>06 + 10</td><td>16</td><td class='mix'>冷温</td></tr>
+<tr><td>07 + 09</td><td>16</td><td class='mix'>冷温</td></tr></tbody></table>
+</div>
+
+<div class="card">
+  <h3 style="margin-top:0">历史21期回测 (规则过滤率)</h3>
+  <div class="kv">
+    <span class="ok">满足规则: <b>11</b> 期 (52.4%)</span>
+    <span class="bad">被规则剔除: <b>10</b> 期 (47.6%)</span>
+  </div>
+  <table><thead><tr><th>期号</th><th>后区组合</th><th>和值</th><th>校验</th></tr></thead><tbody><tr><td>2026077</td><td>06 + 07</td><td>13</td><td class='ok'>✓ 满足</td></tr>
+<tr><td>2026075</td><td>04 + 10</td><td>14</td><td class='ok'>✓ 满足</td></tr>
+<tr><td>2026074</td><td>01 + 12</td><td>13</td><td class='ok'>✓ 满足</td></tr>
+<tr><td>2026069</td><td>03 + 10</td><td>13</td><td class='ok'>✓ 满足</td></tr>
+<tr><td>2026068</td><td>06 + 10</td><td>16</td><td class='ok'>✓ 满足</td></tr>
+<tr><td>2026066</td><td>04 + 05</td><td>9</td><td class='ok'>✓ 满足</td></tr>
+<tr><td>2026065</td><td>04 + 08</td><td>12</td><td class='ok'>✓ 满足</td></tr>
+<tr><td>2026064</td><td>02 + 07</td><td>9</td><td class='ok'>✓ 满足</td></tr>
+<tr><td>2026063</td><td>01 + 12</td><td>13</td><td class='ok'>✓ 满足</td></tr>
+<tr><td>2026062</td><td>04 + 10</td><td>14</td><td class='ok'>✓ 满足</td></tr>
+<tr><td>2026059</td><td>07 + 08</td><td>15</td><td class='ok'>✓ 满足</td></tr>
+<tr><td>2026079</td><td>05 + 12</td><td>17</td><td class='bad'>✗ 和值越界</td></tr>
+<tr><td>2026078</td><td>08 + 11</td><td>19</td><td class='bad'>✗ 和值越界</td></tr>
+<tr><td>2026076</td><td>02 + 11</td><td>13</td><td class='bad'>✗ 全热</td></tr>
+<tr><td>2026073</td><td>02 + 12</td><td>14</td><td class='bad'>✗ 全热</td></tr>
+<tr><td>2026072</td><td>09 + 11</td><td>20</td><td class='bad'>✗ 和值越界</td></tr>
+<tr><td>2026071</td><td>02 + 03</td><td>5</td><td class='bad'>✗ 和值越界</td></tr>
+<tr><td>2026070</td><td>02 + 11</td><td>13</td><td class='bad'>✗ 全热</td></tr>
+<tr><td>2026067</td><td>07 + 11</td><td>18</td><td class='bad'>✗ 和值越界</td></tr>
+<tr><td>2026061</td><td>02 + 12</td><td>14</td><td class='bad'>✗ 全热</td></tr>
+<tr><td>2026060</td><td>01 + 05</td><td>6</td><td class='bad'>✗ 和值越界</td></tr>
+</tbody></table>
+  <p class="note">说明: 历史21期仅 52.4% 满足本规则集, 即该规则为较强过滤条件, 会系统性排除约 47.6% 的历史开奖组合。</p>
+</div>
+
+<div class="card note">
+  ⚠️ <b>理性购彩提示:</b> 上述冷热划分、和值区间、搭配禁忌均为分析者自定义的<b>选号/过滤约束</b>, 大乐透官方并无此类规定。
+  每期开奖为独立随机事件, 历史分布与搭配规律不预示未来。本说明仅作数据归档与规则演示, <b>不构成任何选号建议</b>。请量力而行。
+  存档: dlt_back_hotcold.csv, dlt_back_valid_combo.csv
+</div>
+</div></body></html>
