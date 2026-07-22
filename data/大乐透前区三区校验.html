@@ -1,0 +1,80 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>大乐透前区三区校验</title>
+<style>
+ *{box-sizing:border-box;font-family:-apple-system,"Microsoft YaHei",sans-serif}
+ body{margin:0;background:#f5f7fa;color:#222;padding:24px}
+ .wrap{max-width:860px;margin:0 auto}
+ h1{font-size:22px;margin:0 0 4px} .sub{color:#666;font-size:13px;margin-bottom:18px}
+ .card{background:#fff;border-radius:10px;padding:18px 20px;margin-bottom:18px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+ .kv{display:flex;gap:22px;flex-wrap:wrap;font-size:14px;margin:8px 0}
+ .big{font-size:30px;font-weight:700} .ok{color:#27ae60} .bad{color:#e74c3c}
+ .pill{display:inline-block;padding:3px 10px;border-radius:20px;font-size:13px;background:#eaf3fb;color:#2980b9;margin:2px}
+ .miss{color:#e74c3c;font-size:12px}
+ table{width:100%;border-collapse:collapse;font-size:13px}
+ th,td{padding:6px 8px;border-bottom:1px solid #eee;text-align:center}
+ th{background:#fafafa;color:#555}
+ .note{font-size:12px;color:#888;line-height:1.7}
+ .tag{display:inline-block;padding:2px 8px;background:#f0f0f0;border-radius:4px;font-size:12px;margin:2px}
+</style></head><body><div class="wrap">
+<h1>📊 大乐透前区三区校验报告</h1>
+<div class="sub">分区口径: 一区 01-10 ｜ 二区 11-20 ｜ 三区 21-35 ｜ 校验规则: 每期5个前区号须三区全覆盖(每区≥1)
+｜ 数据: 第2026059–2026079期 (共21期)</div>
+
+<div class="card">
+  <div class="kv">
+    <div><div class="big ok">15</div><div>满足全覆盖</div></div>
+    <div><div class="big bad">6</div><div>未满足(缺失某区)</div></div>
+    <div><div class="big">71.4%</div><div>历史满足率</div></div>
+  </div>
+  <div class="note">说明: 大乐透官方<b>无</b>"三区必须全覆盖"之规定, 此为自定义选号/过滤约束。历史21期中仅 15 期满足, 即该约束会过滤掉 6 期 (28.6%) 的历史开奖组合。若作为选号硬性条件, 将系统性排除这些形态。</div>
+</div>
+
+<div class="card">
+  <h3 style="margin-top:0">各区总出号频次 (21期共105个前区位置)</h3>
+  <div class="kv">
+    <span class="pill">一区 01-10: <b>24</b> 次 (1.14/期)</span>
+    <span class="pill">二区 11-20: <b>34</b> 次 (1.62/期)</span>
+    <span class="pill">三区 21-35: <b>47</b> 次 (2.24/期)</span>
+  </div>
+  <div class="note">三区号码池(15个)最大, 理论出号占比应最高; 一区/二区号码池各10个。实际分布详见下表逐期校验。</div>
+</div>
+
+<div class="card">
+  <h3 style="margin-top:0">分布模式统计 (一区-二区-三区 出号数)</h3>
+  <div><span class='tag'>1-2-2 ×6</span> <span class='tag'>1-3-1 ×4</span> <span class='tag'>1-1-3 ×3</span> <span class='tag'>2-0-3 ×2</span> <span class='tag'>0-2-3 ×2</span> <span class='tag'>2-2-1 ×1</span> <span class='tag'>3-0-2 ×1</span> <span class='tag'>2-1-2 ×1</span> <span class='tag'>0-0-5 ×1</span></div>
+</div>
+
+<div class="card">
+  <h3 style="margin-top:0">📋 逐期分区校验明细</h3>
+  <table><thead><tr><th>期号</th><th>日期</th><th>一区(01-10)</th><th>二区(11-20)</th><th>三区(21-35)</th><th>校验</th></tr></thead>
+  <tbody><tr><td>2026079</td><td>2026-07-15</td><td>2</td><td>0</td><td>3</td><td class='bad'>✗ <span class="miss">缺二区</span></td></tr>
+<tr><td>2026078</td><td>2026-07-13</td><td>1</td><td>2</td><td>2</td><td class='ok'>✓</td></tr>
+<tr><td>2026077</td><td>2026-07-11</td><td>1</td><td>2</td><td>2</td><td class='ok'>✓</td></tr>
+<tr><td>2026076</td><td>2026-07-08</td><td>0</td><td>2</td><td>3</td><td class='bad'>✗ <span class="miss">缺一区</span></td></tr>
+<tr><td>2026075</td><td>2026-07-06</td><td>2</td><td>2</td><td>1</td><td class='ok'>✓</td></tr>
+<tr><td>2026074</td><td>2026-07-04</td><td>3</td><td>0</td><td>2</td><td class='bad'>✗ <span class="miss">缺二区</span></td></tr>
+<tr><td>2026073</td><td>2026-07-01</td><td>2</td><td>0</td><td>3</td><td class='bad'>✗ <span class="miss">缺二区</span></td></tr>
+<tr><td>2026072</td><td>2026-06-29</td><td>1</td><td>1</td><td>3</td><td class='ok'>✓</td></tr>
+<tr><td>2026071</td><td>2026-06-27</td><td>1</td><td>1</td><td>3</td><td class='ok'>✓</td></tr>
+<tr><td>2026070</td><td>2026-06-24</td><td>2</td><td>1</td><td>2</td><td class='ok'>✓</td></tr>
+<tr><td>2026069</td><td>2026-06-22</td><td>0</td><td>2</td><td>3</td><td class='bad'>✗ <span class="miss">缺一区</span></td></tr>
+<tr><td>2026068</td><td>2026-06-20</td><td>1</td><td>2</td><td>2</td><td class='ok'>✓</td></tr>
+<tr><td>2026067</td><td>2026-06-17</td><td>1</td><td>3</td><td>1</td><td class='ok'>✓</td></tr>
+<tr><td>2026066</td><td>2026-06-15</td><td>1</td><td>2</td><td>2</td><td class='ok'>✓</td></tr>
+<tr><td>2026065</td><td>2026-06-13</td><td>1</td><td>3</td><td>1</td><td class='ok'>✓</td></tr>
+<tr><td>2026064</td><td>2026-06-10</td><td>1</td><td>3</td><td>1</td><td class='ok'>✓</td></tr>
+<tr><td>2026063</td><td>2026-06-08</td><td>1</td><td>2</td><td>2</td><td class='ok'>✓</td></tr>
+<tr><td>2026062</td><td>2026-06-06</td><td>1</td><td>2</td><td>2</td><td class='ok'>✓</td></tr>
+<tr><td>2026061</td><td>2026-06-03</td><td>1</td><td>1</td><td>3</td><td class='ok'>✓</td></tr>
+<tr><td>2026060</td><td>2026-06-01</td><td>0</td><td>0</td><td>5</td><td class='bad'>✗ <span class="miss">缺一区/二区</span></td></tr>
+<tr><td>2026059</td><td>2026-05-30</td><td>1</td><td>3</td><td>1</td><td class='ok'>✓</td></tr>
+</tbody></table>
+</div>
+
+<div class="card note">
+  ⚠️ <b>理性购彩提示:</b> 本校验仅描述历史开奖数据的分区形态分布, 彩票每期开奖为独立随机事件, 历史分布不预示未来。
+  三区全覆盖仅为分析者自定义条件, 非官方规则。请量力而行。
+  存档: dlt_zone_check.csv
+</div>
+</div></body></html>
